@@ -15,19 +15,9 @@ O objetivo deste repositório é explorar e integrar mecânicas de sobrevivênci
 
 ## Estrutura do Repositório
 
-- `scripts/`: Contém os scripts e modificações necessárias para integrar as funcionalidades de "Rust" no MTA.
-- `resources/`: Recursos adicionais, como arquivos de configuração ou assets necessários para o funcionamento dos mods.
+- `resources/`: Recursos adicionais, como arquivos de configuração ou assets necessários para o funcionamento dos mods, também contém os scripts e modificações necessárias para integrar as funcionalidades de "Rust" no MTA.
+
 - `LICENSE`: Licença do projeto.
-
-## Como Contribuir
-
-Contribuições são bem-vindas! Se você deseja contribuir para este projeto, siga estas etapas:
-
-1. Faça um fork do repositório e clone-o para o seu ambiente de desenvolvimento.
-2. Implemente suas alterações em uma nova branch (`git checkout -b feature/MinhaFeature`).
-3. Faça commits das suas mudanças (`git commit -am 'Adicionando uma nova feature'`).
-4. Envie suas alterações para o seu fork (`git push origin feature/MinhaFeature`).
-5. Crie um novo Pull Request no repositório principal.
 
 ## Licença
 
