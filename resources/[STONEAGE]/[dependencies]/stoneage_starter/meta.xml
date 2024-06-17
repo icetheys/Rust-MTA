@@ -1,0 +1,10 @@
+<meta>
+    <info author='iDannz'/>
+
+    <script src='s.main.luac' type='shared' cache='false'/>
+
+    <aclrequest>
+        <right name="function.startResource" access="true" />
+        <right name="function.stopResource" access="true" />
+    </aclrequest>
+</meta>

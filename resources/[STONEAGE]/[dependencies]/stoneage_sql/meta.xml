@@ -1,0 +1,11 @@
+<meta>
+    <script src='s.main.lua' type='server' />
+
+    <export function='Query' type='server' />
+    <export function='Exec' type='server' />
+    <export function='getDBTableSize' type='server' />
+    
+    <aclrequest>
+        <right name="function.shutdown" access="true" />
+    </aclrequest>
+</meta>

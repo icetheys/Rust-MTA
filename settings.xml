@@ -1,0 +1,7 @@
+<settings>
+    <setting name="admin.ip2cUpdateTime" value="[1709751412]"></setting>
+    <setting name="*freeroam.welcometextonstart" value='[&quot;true&quot;]'></setting>
+    <setting name="*freeroam.spawnmaponstart" value='[&quot;true&quot;]'></setting>
+    <setting name="*freeroam.spawnmapondeath" value='[&quot;false&quot;]'></setting>
+    <setting name="*admin.clientcheckban" value='[&quot;false&quot;]'></setting>
+</settings>

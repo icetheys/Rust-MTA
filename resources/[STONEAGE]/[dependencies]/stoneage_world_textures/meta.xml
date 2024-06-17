@@ -1,0 +1,87 @@
+<meta>
+	<info author="iDannz" description="f1 Panel" version="1.0" type="script" />
+	<script src="config.lua" type="client" cache='false'/>
+	<script src="c.main.lua" type="client" cache='false'/>
+
+	<export function='toggleWorldTextures' type='client'/>
+	<file src="fx/detail.fx" type="client" />
+	<file src="fx/mta-helper.fx" type="client" />
+	<file src="fx/world.fx" type="client" />
+
+	<!-- <file src="media/dirty.png" type="client" />
+	<file src="media/detail04.png" type="client" />
+	<file src="media/detail22.png" type="client" />
+	<file src="media/detail29.png" type="client" />
+	<file src="media/detail35T.png" type="client" />
+	<file src="media/detail55.png" type="client" />
+	<file src="media/detail58.png" type="client" />
+	<file src="media/detail63.png" type="client" />
+	<file src="media/detail68.png" type="client" />
+	 -->
+	<file src="media/pedra.png" type="client" />
+	<file src="media/1.png" type="client" />
+	<file src="media/2.png" type="client" />
+	<file src="media/3.png" type="client" />
+	<file src="media/4.png" type="client" />
+	<file src="media/5.png" type="client" />
+	<file src="media/6.png" type="client" />
+	<file src="media/7.png" type="client" />
+	<file src="media/10.png" type="client" />
+	<file src="media/13.png" type="client" />
+	<file src="media/14.png" type="client" />
+	<file src="media/15.png" type="client" />
+	<file src="media/18.png" type="client" />
+	<file src="media/19.png" type="client" />
+	<file src="media/22.png" type="client" />
+	<file src="media/23.png" type="client" />
+	<file src="media/26.png" type="client" />
+	<file src="media/27.png" type="client" />
+	<file src="media/28.png" type="client" />
+	<file src="media/29.png" type="client" />
+	<file src="media/30.png" type="client" />
+	<file src="media/31.png" type="client" />
+	<file src="media/32.png" type="client" />
+	<file src="media/33.png" type="client" />
+	<file src="media/34.png" type="client" />
+	<file src="media/35.png" type="client" />
+	<file src="media/36.png" type="client" />
+	<file src="media/38.png" type="client" />
+	<file src="media/39.png" type="client" />
+	<file src="media/40.png" type="client" />
+	<file src="media/41.png" type="client" />
+	<file src="media/42.png" type="client" />
+	<file src="media/44.png" type="client" />
+	<file src="media/45.png" type="client" />
+	<file src="media/48.png" type="client" />
+	<file src="media/56.png" type="client" />
+	<file src="media/57.png" type="client" />
+	<file src="media/58.png" type="client" />
+	<file src="media/59.png" type="client" />
+	<file src="media/60.png" type="client" />
+	<file src="media/61.png" type="client" />
+	<file src="media/62.png" type="client" />
+	<file src="media/64.png" type="client" />
+	<file src="media/65.png" type="client" />
+	<file src="media/66.png" type="client" />
+	<file src="media/67.png" type="client" />
+	<file src="media/68.png" type="client" />
+	<file src="media/69.png" type="client" />
+	<file src="media/70.png" type="client" />
+	<file src="media/71.png" type="client" />
+	<file src="media/72.png" type="client" />
+	<file src="media/74.png" type="client" />
+	<file src="media/76.png" type="client" />
+	<file src="media/78.png" type="client" />
+	<file src="media/79.png" type="client" />
+	<file src="media/80.png" type="client" />
+	<file src="media/83.png" type="client" />
+	<file src="media/84.png" type="client" />
+	<file src="media/85.png" type="client" />
+	<file src="media/86.png" type="client" />
+
+	<file src="media/block.png" type="client" />
+	<file src="media/des_dirttrackl.png" type="client" />
+	<file src="media/des_scrub1.png" type="client" />
+	<file src="media/des_scrub11.png" type="client" />
+
+</meta>

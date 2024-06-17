@@ -1,0 +1,6 @@
+<meta>
+    <script src='c.main.lua' type='client' cache='false' />
+    <script src='highlight.lua' type='client' cache='false' />
+
+    <export function='highlightObject' type='client' />
+</meta>

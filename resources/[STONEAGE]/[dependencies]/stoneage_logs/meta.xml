@@ -1,0 +1,14 @@
+<meta>
+    <script src='s.main.lua' type='server'/>
+    <script src='s.handleDiscord.lua' type='server'/>
+    <script src='s.others.lua' type='server'/>
+    <script src='c.main.lua' type='client' cache='false'/>
+
+    <export function='saveLog' type='shared'/>
+    <export function='savePlayerLog' type='shared'/>
+    <export function='sendDiscordLog' type='server'/>
+    <export function='onSendChatMessage' type='server'/>
+    <export function='ForceSaveLogsToDisk' type='server'/>
+
+    <min_mta_version server="1.5.7-9.11413"/>
+</meta>

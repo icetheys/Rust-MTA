@@ -1,0 +1,4 @@
+<meta>
+    <info author="iDannz" description="" version="0.0.1b" type="script" />
+    <script src="client.lua" type="client" cache="false"></script>
+</meta> 

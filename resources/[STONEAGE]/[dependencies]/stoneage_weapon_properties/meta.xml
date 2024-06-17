@@ -1,0 +1,4 @@
+<meta>
+    <script src='config.lua' type='server'/>
+    <script src='s.main.lua' type='server'/>
+</meta>

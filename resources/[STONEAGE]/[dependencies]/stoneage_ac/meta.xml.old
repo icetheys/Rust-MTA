@@ -1,0 +1,7 @@
+<meta>
+    <script src='scripts/client/c.antifly.lua' type='client' cache='false'/>
+    <script src='scripts/client/c.main.lua' type='client' cache='false'/>
+    <script src='scripts/server/s.main.lua' type='server'/>
+    <script src='scripts/server/s.kickping.lua' type='server'/>
+    <min_mta_version client="1.5.8-9.21372"></min_mta_version>
+</meta>

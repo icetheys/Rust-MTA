@@ -1,0 +1,50 @@
+<meta>
+    <info author="iDannz" />
+    <min_mta_version client="1.5.7-9.20447"></min_mta_version>
+    
+    <script src="async.lua" type="shared" cache="false" />
+    
+    <script src="g.utils.lua" type="shared" cache="false" />
+    
+    <script src="server/s.utils.lua" type="server" />
+    <script src="server/s.main.lua" type="server" />
+    
+    <script src="client/c.utils.lua" type="client" cache="false" />
+    <script src="client/c.main.lua" type="client" cache="false" />
+    <script src="client/c.config.lua" type="client" cache="false" />
+    <script src="client/c.baseupgrade.lua" type="client" cache="false" />
+    <script src="client/c.syncPosition.lua" type="client" cache="false" />
+    <script src="client/c.render.lua" type="client" cache="false" />
+    <script src="client/c.rules.lua" type="client" cache="false" />
+    
+    <file src="assets/regular.ttf" />
+    <file src="assets/regular2.ttf" />
+    <file src="assets/click.wav" />
+    <file src="assets/logo.png" />
+    <file src="assets/images/buildings/escadas.png" />
+    <file src="assets/images/buildings/floorport.png" />
+    <file src="assets/images/buildings/janela.png" />
+    <file src="assets/images/buildings/fundacao_triangular.png" />
+    <file src="assets/images/buildings/fundacao.png" />
+    <file src="assets/images/buildings/meia_fundacao.png" />
+    <file src="assets/images/buildings/meia_parede.png" />
+    <file src="assets/images/buildings/meio_teto.png" />
+    <file src="assets/images/buildings/parede.png" />
+    <file src="assets/images/buildings/parede_porta.png" />
+    <file src="assets/images/buildings/porta.png" />
+    <file src="assets/images/buildings/portao.png" />
+    <file src="assets/images/buildings/teto.png" />
+    <file src="assets/images/buildings/teto_triangular.png" />
+    
+    <file src="assets/images/upgrades/1.png" />
+    <file src="assets/images/upgrades/2.png" />
+    <file src="assets/images/upgrades/3.png" />
+    <file src="assets/images/upgrades/4.png" />
+    
+    <export function="toggleBaseBuildingUI" type="client" />
+    <export function="toggleBuilding" type="client" />
+    <export function="ToggleBaseUpgrade" type="client" />
+    <export function="updateAttachPos" type="client" />
+    
+    <oop>true</oop>
+</meta>

@@ -1,0 +1,5 @@
+<meta>
+    <script src='c.main.lua' type='client' cache='false'/>
+    <script src='render.lua' type='client' cache='false'/>
+    <file src='team.png'/>
+</meta>

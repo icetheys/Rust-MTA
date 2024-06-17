@@ -1,0 +1,18 @@
+<meta>
+    <info author="bgzada" type="script" name="antievade" />
+
+    <script src="c_main.lua" type="client" cache="false" />
+    <script src="c_bike.lua" type="client" cache="false" />
+
+    <script src="s_main.lua" type="server" />
+
+    <aclrequest>
+        <right name="function.getBans" access="true"/>
+        <right name="function.addBan" access="true"/>
+        <right name="function.reloadBans" access="true"/>
+    </aclrequest>
+
+    <oop>true</oop>
+
+    <min_mta_version server="1.5.4-9.11413" client="1.5.4-9.11342" />
+</meta>

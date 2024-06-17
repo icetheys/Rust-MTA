@@ -1,0 +1,18 @@
+<meta>
+    <script src="config.lua" type="client" cache="false" />
+    <script src="c.main.lua" type="client" cache="false" />
+    <file src="assets/img/background_1.png" />
+    <file src="assets/img/background_2.png" />
+    <file src="assets/img/background_3.png" />
+    <file src="assets/img/background_4.png" />
+    <file src="assets/img/shadow.png" />
+    <file src="assets/img/loading.png" />
+    <file src="assets/img/discord.png" />
+    <file src="assets/fonts/kommom.otf" />
+    
+    <export function="toggleLoadScreen" type="client" />
+    <export function="setHeader" type="client" />
+    <export function="setInfo" type="client" />
+    <download_priority_group>99</download_priority_group>
+    <min_mta_version client="1.5.7-9.20447"></min_mta_version>
+</meta>

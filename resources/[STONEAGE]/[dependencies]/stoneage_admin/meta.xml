@@ -1,0 +1,39 @@
+<meta>
+    <script src="config.lua" type="shared" cache="false" />
+    <script src="async.lua" type="shared" cache="false" />
+    
+    <script src="client/c.utils.lua" type="client" cache="false" />
+    <script src="client/c.main.lua" type="client" cache="false" />
+    <script src="client/c.fly.lua" type="client" cache="false" />
+    <script src="client/widgets/widget.home.lua" type="client" cache="false" />
+    <script src="client/widgets/widget.usuario.lua" type="client" cache="false" />
+    <script src="client/widgets/widget.veiculo.lua" type="client" cache="false" />
+    <script src="client/widgets/widget.grupos.lua" type="client" cache="false" />
+    <script src="client/widgets/widget.bans.lua" type="client" cache="false" />
+    <script src="client/widgets/widget.vip.lua" type="client" cache="false" />
+    <script src="client/widgets/widget.itens.lua" type="client" cache="false" />
+    <script src="client/widgets/widget.config.lua" type="client" cache="false" />
+    
+    <script src="client/others/other.edit-inv.lua" type="client" cache="false" />
+    <script src="client/others/other.spectate.lua" type="client" cache="false" />
+    
+    <script src="server/s.main.lua" type="server" />
+    <script src="server/s.bans.lua" type="server" />
+    <script src="server/s.vips.lua" type="server" />
+    <script src="server/s.itens.lua" type="server" />
+    <script src="server/s.groups.lua" type="server" />
+    <script src="server/s.config.lua" type="server" />
+    <script src="server/s.functions.lua" type="server" />
+    <script src="server/s.commands.lua" type="server" />
+    <script src="server/s.spectate.lua" type="server" />
+    
+    <file src="assets/icons/bans.png" />
+    <file src="assets/icons/config.png" />
+    <file src="assets/icons/grupos.png" />
+    <file src="assets/icons/home.png" />
+    <file src="assets/icons/usuario.png" />
+    <file src="assets/icons/veiculo.png" />
+    <file src="assets/icons/vip.png" />
+    <file src="assets/icons/itens.png" />
+    <min_mta_version client="1.5.6-9.16361"></min_mta_version>
+</meta>

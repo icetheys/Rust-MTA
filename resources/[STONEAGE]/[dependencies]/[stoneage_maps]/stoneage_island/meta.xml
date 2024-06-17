@@ -1,0 +1,12 @@
+<meta>
+    <oop>true</oop>
+    <info author="l7" name="StoneAge_Ilha" version="1.5.6" type="script" />
+    <info type="map" version="1.0.0"></info>
+    <map src="StoneAge_Ilha.map" dimension="0"></map>
+    <script src="mapEditorScriptingExtension_s.lua" type="server"></script>
+    <script src="mapEditorScriptingExtension_c.lua" type="client" validate="false"></script>
+    <script src="replace.lua" type="client" cache="false" />
+    <file src="a51_storeroom.dff" />
+    <file src="col.col" />
+    <file src="a51.txd" />
+</meta>

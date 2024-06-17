@@ -1,0 +1,19 @@
+<meta>
+    <script src='async.lua' type='server' cache='false'/>
+
+    <script src='shared/g.main.lua' type='shared' cache='false'/>
+
+    <script src='server/s.main.lua' type='server'/>
+
+    <script src='client/c.main.lua' type='client' cache='false'/>
+    <script src='client/c.utils.lua' type='client' cache='false'/>
+    <script src='client/c.attach.lua' type='client' cache='false'/>
+
+    <export function="attachElementToBone" type="shared" />
+    <export function="detachElementFromBone" type="shared" />
+    <export function="isElementAttachedToBone" type="shared" />
+    <export function="getElementBoneAttachmentDetails" type="shared" />
+    <export function="setElementBonePositionOffset" type="shared" />
+    <export function="setElementBoneRotationOffset" type="shared" />
+
+</meta>

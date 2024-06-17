@@ -1,0 +1,5 @@
+<meta>
+    <script src='c.main.lua' type='client' cache='false'/>
+    <script src='s.main.lua' type = 'server'/>
+    <export function='toggleRanking' type='client'/>
+</meta>

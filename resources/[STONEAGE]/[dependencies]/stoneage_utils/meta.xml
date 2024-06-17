@@ -1,0 +1,31 @@
+<meta>
+    <script src='g.utils.lua' type='shared' cache='false'/>
+    <script src='c.utils.lua' type='client' cache='false'/>
+    <script src='s.utils.lua' type='server'/>
+
+    <file src='logo.png'/>
+
+    <export function='getTimeString' type='shared'/>
+    <export function='debug' type='shared'/>
+    
+    <export function='seconds' type='shared'/>
+    <export function='minutes' type='shared'/>
+    <export function='hours' type='shared'/>
+    <export function='days' type='shared'/>
+    
+    <export function='findValueInTable' type='shared'/>
+    <export function='randomValueInTable' type='shared'/>
+    <export function='getTableSize' type='shared'/>
+    
+    <export function='randomFloatNumber' type='shared'/>
+
+    <export function='getPositionFromElementOffset' type='shared'/>
+    <export function='secondsToTimeDesc' type='shared'/>
+    <export function='getElementsNear' type='shared'/>
+    <export function='SecondsToTimeDesc' type='shared'/>
+    
+    <export function='pixels' type='client'/>
+    <export function='getTexture' type='client'/>
+    <export function='dxDrawRing' type='client'/>
+    <export function='dxDrawBorderedText' type='client'/>
+</meta>

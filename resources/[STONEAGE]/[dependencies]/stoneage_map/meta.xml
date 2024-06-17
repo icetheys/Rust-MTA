@@ -1,0 +1,85 @@
+<meta>
+    <info author='iDannz'/>
+
+    <script src='config.lua' type='client' cache='false'/>
+
+    <script src='client/utils.lua' type='client' cache='false'/>
+    <script src='client/main.lua' type='client' cache='false'/>
+    <script src='client/render.lua' type='client' cache='false'/>
+
+    <file src='assets/map.png'/>
+    <file src='assets/circle.png'/>
+    <file src='assets/mask.fx'/>
+    <file src='assets/tex_matrix.fx'/>
+
+    <file src="assets/blips/01.png"/>
+    <file src="assets/blips/02.png"/>
+    <file src="assets/blips/03.png"/>
+    <file src="assets/blips/04.png"/>
+    <file src="assets/blips/05.png"/>
+    <file src="assets/blips/06.png"/>
+    <file src="assets/blips/07.png"/>
+    <file src="assets/blips/08.png"/>
+    <file src="assets/blips/09.png"/>
+    <file src="assets/blips/10.png"/>
+    <file src="assets/blips/11.png"/>
+    <file src="assets/blips/12.png"/>
+    <file src="assets/blips/13.png"/>
+    <file src="assets/blips/14.png"/>
+    <file src="assets/blips/15.png"/>
+    <file src="assets/blips/16.png"/>
+    <file src="assets/blips/17.png"/>
+    <file src="assets/blips/18.png"/>
+    <file src="assets/blips/19.png"/>
+    <file src="assets/blips/20.png"/>
+    <file src="assets/blips/21.png"/>
+    <file src="assets/blips/22.png"/>
+    <file src="assets/blips/23.png"/>
+    <file src="assets/blips/24.png"/>
+    <file src="assets/blips/25.png"/>
+    <file src="assets/blips/26.png"/>
+    <file src="assets/blips/27.png"/>
+    <file src="assets/blips/28.png"/>
+    <file src="assets/blips/29.png"/>
+    <file src="assets/blips/30.png"/>
+    <file src="assets/blips/31.png"/>
+    <file src="assets/blips/32.png"/>
+    <file src="assets/blips/33.png"/>
+    <file src="assets/blips/34.png"/>
+    <file src="assets/blips/35.png"/>
+    <file src="assets/blips/36.png"/>
+    <file src="assets/blips/37.png"/>
+    <file src="assets/blips/38.png"/>
+    <file src="assets/blips/39.png"/>
+    <file src="assets/blips/40.png"/>
+    <file src="assets/blips/41.png"/>
+    <file src="assets/blips/42.png"/>
+    <file src="assets/blips/43.png"/>
+    <file src="assets/blips/44.png"/>
+    <file src="assets/blips/45.png"/>
+    <file src="assets/blips/46.png"/>
+    <file src="assets/blips/47.png"/>
+    <file src="assets/blips/48.png"/>
+    <file src="assets/blips/49.png"/>
+    <file src="assets/blips/50.png"/>
+    <file src="assets/blips/51.png"/>
+    <file src="assets/blips/52.png"/>
+    <file src="assets/blips/53.png"/>
+    <file src="assets/blips/54.png"/>
+    <file src="assets/blips/55.png"/>
+    <file src="assets/blips/56.png"/>
+    <file src="assets/blips/57.png"/>
+    <file src="assets/blips/58.png"/>
+    <file src="assets/blips/59.png"/>
+    <file src="assets/blips/60.png"/>
+    <file src="assets/blips/61.png"/>
+    <file src="assets/blips/62.png"/>
+    <file src="assets/blips/63.png"/>
+
+    <file src="assets/blips/down.png"/>
+    <file src="assets/blips/up.png"/>
+    <file src="assets/blips/square.png"/>
+
+    <download_priority_group>-1</download_priority_group>
+
+</meta>

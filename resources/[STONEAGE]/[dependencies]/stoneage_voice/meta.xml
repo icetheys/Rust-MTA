@@ -1,0 +1,9 @@
+<meta>
+    <min_mta_version server="1.5.4-0.00000" client="1.5.4-0.00000" />
+
+    <script src="voice_s.lua" type="server"></script>
+    <script src="voice.lua" type="client" cache="false"></script>
+
+    <file src='assets/icon.png'/>
+    <oop>true</oop>
+</meta>

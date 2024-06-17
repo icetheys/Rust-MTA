@@ -1,0 +1,9 @@
+<meta>
+    <script src="Client.lua" type="client" cache="false"/>
+    <script src="Server.lua" type="server"/>
+    <script src="s_settings.lua" type="server"/>
+        
+    <export function='spawnDrop' type='server'/>
+    	
+    <file src="Sounds/Airdrop1.mp3"/>
+</meta>

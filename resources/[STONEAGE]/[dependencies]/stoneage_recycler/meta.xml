@@ -1,0 +1,6 @@
+<meta>
+    <script src='config.lua' type='server'/>
+    <script src='s.main.lua' type='server'/>
+
+    <file src='assets/sfx.mp3'/>
+</meta>

@@ -1,0 +1,8 @@
+<meta>
+    <script src='client/c.main.lua' type='client' cache='false'/>
+    <script src='client/c.render.lua' type='client' cache='false'/>
+
+    <script src='server/s.main.lua' type='server'/>
+
+    <file src='font.ttf'/>
+</meta>

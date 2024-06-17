@@ -1,0 +1,5 @@
+<meta>
+  <script type='client' cache='false' src='scripts/c.utils.lua'/>
+  <script type='client' cache='false' src='scripts/c.enter_vehicle.lua'/>
+  <script type='server' cache='false' src='scripts/s.enter_vehicle.lua'/>
+</meta>

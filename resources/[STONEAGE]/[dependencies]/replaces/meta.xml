@@ -1,0 +1,408 @@
+<meta>
+    <info author="iDannz" version="1.0" name="Replaces de objetos" description="desc." type="script" />
+    <min_mta_version server="1.5.5-9.13846"></min_mta_version>
+
+    <script src="decrypt.luac" type="client" cache="false" />
+    <script src="async.lua" type="client" cache="false" />
+    <script src="client.lua" type="client" cache="false" />
+    <script src="src/bases.lua" type="client" cache="false" />
+    <script src="src/others.lua" type="client" cache="false" />
+    <script src="src/craftables.lua" type="client" cache="false" />
+    <script src="src/pickups.lua" type="client" cache="false" />
+    <script src="src/weapons.lua" type="client" cache="false" />
+    <script src="src/skins.lua" type="client" cache="false" />
+    <script src="src/animals.lua" type="client" cache="false" />
+    <script src="src/horses.lua" type="client" cache="false" />
+
+    <file src="files/animals/fox.txd_encrypted" />
+    <file src="files/animals/fox.dff_encrypted" />
+    <file src="files/animals/lobo.txd_encrypted" />
+    <file src="files/animals/lobo.dff_encrypted" />
+    <file src="files/animals/panda.txd_encrypted" />
+    <file src="files/animals/panda.dff_encrypted" />
+    <file src="files/animals/tigre.txd_encrypted" />
+    <file src="files/animals/tigre.dff_encrypted" />
+
+    <file src="files/horses/1.txd_encrypted" />
+    <file src="files/horses/1.dff_encrypted" />
+    <file src="files/horses/2.txd_encrypted" />
+    <file src="files/horses/2.dff_encrypted" />
+    <file src="files/horses/3.txd_encrypted" />
+    <file src="files/horses/3.dff_encrypted" />
+
+    <file src="files/objects/bases/0(palito)/texture.txd_encrypted" />
+    <file src="files/objects/bases/0(palito)/1_foundation.col_encrypted" />
+    <file src="files/objects/bases/0(palito)/1_foundation.dff_encrypted" />
+    <file src="files/objects/bases/0(palito)/2_foundation_triangular.col_encrypted" />
+    <file src="files/objects/bases/0(palito)/2_foundation_triangular.dff_encrypted" />
+    <file src="files/objects/bases/0(palito)/3_foundation_div.col_encrypted" />
+    <file src="files/objects/bases/0(palito)/3_foundation_div.dff_encrypted" />
+    <file src="files/objects/bases/0(palito)/4_parede.col_encrypted" />
+    <file src="files/objects/bases/0(palito)/4_parede.dff_encrypted" />
+    <file src="files/objects/bases/0(palito)/5_parede_div.col_encrypted" />
+    <file src="files/objects/bases/0(palito)/5_parede_div.dff_encrypted" />
+    <file src="files/objects/bases/0(palito)/6_parede_janela_a.col_encrypted" />
+    <file src="files/objects/bases/0(palito)/6_parede_janela_a.dff_encrypted" />
+    <file src="files/objects/bases/0(palito)/7_parede_janela_f.col_encrypted" />
+    <file src="files/objects/bases/0(palito)/7_parede_janela_f.dff_encrypted" />
+    <file src="files/objects/bases/0(palito)/8_parede_porta.col_encrypted" />
+    <file src="files/objects/bases/0(palito)/8_parede_porta.dff_encrypted" />
+    <file src="files/objects/bases/0(palito)/9_escada.col_encrypted" />
+    <file src="files/objects/bases/0(palito)/9_escada.dff_encrypted" />
+    <file src="files/objects/bases/0(palito)/10_portao.col_encrypted" />
+    <file src="files/objects/bases/0(palito)/10_portao.dff_encrypted" />
+    <file src="files/objects/bases/0(palito)/11_portao_aberto_1.dff_encrypted" />
+    <file src="files/objects/bases/0(palito)/11_portao_aberto_2.dff_encrypted" />
+    <file src="files/objects/bases/0(palito)/12_porta.col_encrypted" />
+    <file src="files/objects/bases/0(palito)/12_porta.dff_encrypted" />
+    <file src="files/objects/bases/0(palito)/12_porta.txd_encrypted" />
+    <file src="files/objects/bases/0(palito)/13_teto.col_encrypted" />
+    <file src="files/objects/bases/0(palito)/13_teto.dff_encrypted" />
+    <file src="files/objects/bases/0(palito)/14_teto_div.col_encrypted" />
+    <file src="files/objects/bases/0(palito)/14_teto_div.dff_encrypted" />
+    <file src="files/objects/bases/0(palito)/15_teto_escada.col_encrypted" />
+    <file src="files/objects/bases/0(palito)/15_teto_escada.dff_encrypted" />
+    <file src="files/objects/bases/0(palito)/16_teto_triangular.col_encrypted" />
+    <file src="files/objects/bases/0(palito)/16_teto_triangular.dff_encrypted" />
+
+    <file src="files/objects/bases/1(madeira)/texture.txd_encrypted" />
+    <file src="files/objects/bases/1(madeira)/1_foundation.col_encrypted" />
+    <file src="files/objects/bases/1(madeira)/1_foundation.dff_encrypted" />
+    <file src="files/objects/bases/1(madeira)/2_foundation_triangular.col_encrypted" />
+    <file src="files/objects/bases/1(madeira)/2_foundation_triangular.dff_encrypted" />
+    <file src="files/objects/bases/1(madeira)/3_foundation_div.col_encrypted" />
+    <file src="files/objects/bases/1(madeira)/3_foundation_div.dff_encrypted" />
+    <file src="files/objects/bases/1(madeira)/4_parede.col_encrypted" />
+    <file src="files/objects/bases/1(madeira)/4_parede.dff_encrypted" />
+    <file src="files/objects/bases/1(madeira)/5_parede_div.col_encrypted" />
+    <file src="files/objects/bases/1(madeira)/5_parede_div.dff_encrypted" />
+    <file src="files/objects/bases/1(madeira)/6_parede_janela_a.col_encrypted" />
+    <file src="files/objects/bases/1(madeira)/6_parede_janela_a.dff_encrypted" />
+    <file src="files/objects/bases/1(madeira)/7_parede_janela_f.col_encrypted" />
+    <file src="files/objects/bases/1(madeira)/7_parede_janela_f.dff_encrypted" />
+    <file src="files/objects/bases/1(madeira)/8_parede_porta.col_encrypted" />
+    <file src="files/objects/bases/1(madeira)/8_parede_porta.dff_encrypted" />
+    <file src="files/objects/bases/1(madeira)/9_escada.col_encrypted" />
+    <file src="files/objects/bases/1(madeira)/9_escada.dff_encrypted" />
+    <file src="files/objects/bases/1(madeira)/10_portao.col_encrypted" />
+    <file src="files/objects/bases/1(madeira)/10_portao.dff_encrypted" />
+    <file src="files/objects/bases/1(madeira)/11_portao_aberto_1.dff_encrypted" />
+    <file src="files/objects/bases/1(madeira)/11_portao_aberto_2.dff_encrypted" />
+    <file src="files/objects/bases/1(madeira)/12_porta.col_encrypted" />
+    <file src="files/objects/bases/1(madeira)/12_porta.dff_encrypted" />
+    <file src="files/objects/bases/1(madeira)/12_porta.txd_encrypted" />
+    <file src="files/objects/bases/1(madeira)/13_teto.col_encrypted" />
+    <file src="files/objects/bases/1(madeira)/13_teto.dff_encrypted" />
+    <file src="files/objects/bases/1(madeira)/14_teto_div.col_encrypted" />
+    <file src="files/objects/bases/1(madeira)/14_teto_div.dff_encrypted" />
+    <file src="files/objects/bases/1(madeira)/15_teto_escada.col_encrypted" />
+    <file src="files/objects/bases/1(madeira)/15_teto_escada.dff_encrypted" />
+    <file src="files/objects/bases/1(madeira)/16_teto_triangular.col_encrypted" />
+    <file src="files/objects/bases/1(madeira)/16_teto_triangular.dff_encrypted" />
+
+    <file src="files/objects/bases/2(pedra)/texture.txd_encrypted" />
+    <file src="files/objects/bases/2(pedra)/1_foundation.col_encrypted" />
+    <file src="files/objects/bases/2(pedra)/1_foundation.dff_encrypted" />
+    <file src="files/objects/bases/2(pedra)/2_foundation_triangular.col_encrypted" />
+    <file src="files/objects/bases/2(pedra)/2_foundation_triangular.dff_encrypted" />
+    <file src="files/objects/bases/2(pedra)/3_foundation_div.col_encrypted" />
+    <file src="files/objects/bases/2(pedra)/3_foundation_div.dff_encrypted" />
+    <file src="files/objects/bases/2(pedra)/4_parede.col_encrypted" />
+    <file src="files/objects/bases/2(pedra)/4_parede.dff_encrypted" />
+    <file src="files/objects/bases/2(pedra)/5_parede_div.col_encrypted" />
+    <file src="files/objects/bases/2(pedra)/5_parede_div.dff_encrypted" />
+    <file src="files/objects/bases/2(pedra)/6_parede_janela_a.col_encrypted" />
+    <file src="files/objects/bases/2(pedra)/6_parede_janela_a.dff_encrypted" />
+    <file src="files/objects/bases/2(pedra)/7_parede_janela_f.col_encrypted" />
+    <file src="files/objects/bases/2(pedra)/7_parede_janela_f.dff_encrypted" />
+    <file src="files/objects/bases/2(pedra)/8_parede_porta.col_encrypted" />
+    <file src="files/objects/bases/2(pedra)/8_parede_porta.dff_encrypted" />
+    <file src="files/objects/bases/2(pedra)/9_escada.col_encrypted" />
+    <file src="files/objects/bases/2(pedra)/9_escada.dff_encrypted" />
+    <file src="files/objects/bases/2(pedra)/10_portao.col_encrypted" />
+    <file src="files/objects/bases/2(pedra)/10_portao.dff_encrypted" />
+    <file src="files/objects/bases/2(pedra)/11_portao_aberto_1.dff_encrypted" />
+    <file src="files/objects/bases/2(pedra)/11_portao_aberto_2.dff_encrypted" />
+    <file src="files/objects/bases/2(pedra)/12_porta.col_encrypted" />
+    <file src="files/objects/bases/2(pedra)/12_porta.dff_encrypted" />
+    <file src="files/objects/bases/2(pedra)/12_porta.txd_encrypted" />
+    <file src="files/objects/bases/2(pedra)/13_teto.col_encrypted" />
+    <file src="files/objects/bases/2(pedra)/13_teto.dff_encrypted" />
+    <file src="files/objects/bases/2(pedra)/14_teto_div.col_encrypted" />
+    <file src="files/objects/bases/2(pedra)/14_teto_div.dff_encrypted" />
+    <file src="files/objects/bases/2(pedra)/15_teto_escada.col_encrypted" />
+    <file src="files/objects/bases/2(pedra)/15_teto_escada.dff_encrypted" />
+    <file src="files/objects/bases/2(pedra)/16_teto_triangular.col_encrypted" />
+    <file src="files/objects/bases/2(pedra)/16_teto_triangular.dff_encrypted" />
+
+    <file src="files/objects/bases/3(ferro)/texture.txd_encrypted" />
+    <file src="files/objects/bases/3(ferro)/1_foundation.col_encrypted" />
+    <file src="files/objects/bases/3(ferro)/1_foundation.dff_encrypted" />
+    <file src="files/objects/bases/3(ferro)/2_foundation_triangular.col_encrypted" />
+    <file src="files/objects/bases/3(ferro)/2_foundation_triangular.dff_encrypted" />
+    <file src="files/objects/bases/3(ferro)/3_foundation_div.col_encrypted" />
+    <file src="files/objects/bases/3(ferro)/3_foundation_div.dff_encrypted" />
+    <file src="files/objects/bases/3(ferro)/4_parede.col_encrypted" />
+    <file src="files/objects/bases/3(ferro)/4_parede.dff_encrypted" />
+    <file src="files/objects/bases/3(ferro)/5_parede_div.col_encrypted" />
+    <file src="files/objects/bases/3(ferro)/5_parede_div.dff_encrypted" />
+    <file src="files/objects/bases/3(ferro)/6_parede_janela_a.col_encrypted" />
+    <file src="files/objects/bases/3(ferro)/6_parede_janela_a.dff_encrypted" />
+    <file src="files/objects/bases/3(ferro)/7_parede_janela_f.col_encrypted" />
+    <file src="files/objects/bases/3(ferro)/7_parede_janela_f.dff_encrypted" />
+    <file src="files/objects/bases/3(ferro)/8_parede_porta.col_encrypted" />
+    <file src="files/objects/bases/3(ferro)/8_parede_porta.dff_encrypted" />
+    <file src="files/objects/bases/3(ferro)/9_escada.col_encrypted" />
+    <file src="files/objects/bases/3(ferro)/9_escada.dff_encrypted" />
+    <file src="files/objects/bases/3(ferro)/10_portao.col_encrypted" />
+    <file src="files/objects/bases/3(ferro)/10_portao.dff_encrypted" />
+    <file src="files/objects/bases/3(ferro)/11_portao_aberto_1.dff_encrypted" />
+    <file src="files/objects/bases/3(ferro)/11_portao_aberto_2.dff_encrypted" />
+    <file src="files/objects/bases/3(ferro)/12_porta.col_encrypted" />
+    <file src="files/objects/bases/3(ferro)/12_porta.dff_encrypted" />
+    <file src="files/objects/bases/3(ferro)/12_porta.txd_encrypted" />
+    <file src="files/objects/bases/3(ferro)/13_teto.col_encrypted" />
+    <file src="files/objects/bases/3(ferro)/13_teto.dff_encrypted" />
+    <file src="files/objects/bases/3(ferro)/14_teto_div.col_encrypted" />
+    <file src="files/objects/bases/3(ferro)/14_teto_div.dff_encrypted" />
+    <file src="files/objects/bases/3(ferro)/15_teto_escada.col_encrypted" />
+    <file src="files/objects/bases/3(ferro)/15_teto_escada.dff_encrypted" />
+    <file src="files/objects/bases/3(ferro)/16_teto_triangular.col_encrypted" />
+    <file src="files/objects/bases/3(ferro)/16_teto_triangular.dff_encrypted" />
+    
+    <file src="files/objects/bases/4(blindado)/texture.txd_encrypted" />
+    <file src="files/objects/bases/4(blindado)/1_foundation.col_encrypted" />
+    <file src="files/objects/bases/4(blindado)/1_foundation.dff_encrypted" />
+    <file src="files/objects/bases/4(blindado)/2_foundation_triangular.col_encrypted" />
+    <file src="files/objects/bases/4(blindado)/2_foundation_triangular.dff_encrypted" />
+    <file src="files/objects/bases/4(blindado)/3_foundation_div.col_encrypted" />
+    <file src="files/objects/bases/4(blindado)/3_foundation_div.dff_encrypted" />
+    <file src="files/objects/bases/4(blindado)/4_parede.col_encrypted" />
+    <file src="files/objects/bases/4(blindado)/4_parede.dff_encrypted" />
+    <file src="files/objects/bases/4(blindado)/5_parede_div.col_encrypted" />
+    <file src="files/objects/bases/4(blindado)/5_parede_div.dff_encrypted" />
+    <file src="files/objects/bases/4(blindado)/6_parede_janela_a.col_encrypted" />
+    <file src="files/objects/bases/4(blindado)/6_parede_janela_a.dff_encrypted" />
+    <file src="files/objects/bases/4(blindado)/7_parede_janela_f.col_encrypted" />
+    <file src="files/objects/bases/4(blindado)/7_parede_janela_f.dff_encrypted" />
+    <file src="files/objects/bases/4(blindado)/8_parede_porta.col_encrypted" />
+    <file src="files/objects/bases/4(blindado)/8_parede_porta.dff_encrypted" />
+    <file src="files/objects/bases/4(blindado)/9_escada.col_encrypted" />
+    <file src="files/objects/bases/4(blindado)/9_escada.dff_encrypted" />
+    <file src="files/objects/bases/4(blindado)/10_portao.col_encrypted" />
+    <file src="files/objects/bases/4(blindado)/10_portao.dff_encrypted" />
+    <file src="files/objects/bases/4(blindado)/11_portao_aberto_1.dff_encrypted" />
+    <file src="files/objects/bases/4(blindado)/11_portao_aberto_2.dff_encrypted" />
+    <file src="files/objects/bases/4(blindado)/12_porta.col_encrypted" />
+    <file src="files/objects/bases/4(blindado)/12_porta.dff_encrypted" />
+    <file src="files/objects/bases/4(blindado)/12_porta.txd_encrypted" />
+    <file src="files/objects/bases/4(blindado)/13_teto.col_encrypted" />
+    <file src="files/objects/bases/4(blindado)/13_teto.dff_encrypted" />
+    <file src="files/objects/bases/4(blindado)/14_teto_div.col_encrypted" />
+    <file src="files/objects/bases/4(blindado)/14_teto_div.dff_encrypted" />
+    <file src="files/objects/bases/4(blindado)/15_teto_escada.col_encrypted" />
+    <file src="files/objects/bases/4(blindado)/15_teto_escada.dff_encrypted" />
+    <file src="files/objects/bases/4(blindado)/16_teto_triangular.col_encrypted" />
+    <file src="files/objects/bases/4(blindado)/16_teto_triangular.dff_encrypted" />
+
+    <file src="files/objects/craftables/parede.dff_encrypted" />
+    <file src="files/objects/craftables/parede.txd_encrypted" />
+
+    <file src="files/objects/craftables/fornalha.txd_encrypted" />
+    <file src="files/objects/craftables/fornalha.dff_encrypted" />
+    <file src="files/objects/craftables/fornalha.col_encrypted" />
+
+    <file src="files/objects/craftables/espetos.txd_encrypted" />
+    <file src="files/objects/craftables/espetos.dff_encrypted" />
+    <file src="files/objects/craftables/espetos.col_encrypted" />
+
+    <file src="files/objects/craftables/placa.txd_encrypted" />
+    <file src="files/objects/craftables/placa.dff_encrypted" />
+    <file src="files/objects/craftables/placa.col_encrypted" />
+
+    <file src="files/objects/craftables/workbench.txd_encrypted" />
+    <file src="files/objects/craftables/workbench.dff_encrypted" />
+    <file src="files/objects/craftables/workbench.col_encrypted" />
+
+    <file src="files/objects/craftables/poco.txd_encrypted" />
+    <file src="files/objects/craftables/poco.dff_encrypted" />
+    <file src="files/objects/craftables/poco.col_encrypted" />
+
+    <file src="files/objects/craftables/bau-pequeno.txd_encrypted" />
+    <file src="files/objects/craftables/bau-pequeno.dff_encrypted" />
+    <file src="files/objects/craftables/bau-pequeno.col_encrypted" />
+
+    <file src="files/objects/craftables/bau-grande.txd_encrypted" />
+    <file src="files/objects/craftables/bau-grande.dff_encrypted" />
+    <file src="files/objects/craftables/bau-grande.col_encrypted" />
+
+    <file src="files/objects/craftables/armario.txd_encrypted" />
+    <file src="files/objects/craftables/armario.dff_encrypted" />
+    <file src="files/objects/craftables/armario.col_encrypted" />
+
+    <file src="files/objects/craftables/canteiro.txd_encrypted" />
+    <file src="files/objects/craftables/canteiro.dff_encrypted" />
+    <file src="files/objects/craftables/canteiro.col_encrypted" />
+
+    <file src="files/objects/craftables/sentry.txd_encrypted" />
+    <file src="files/objects/craftables/sentry.dff_encrypted" />
+    <file src="files/objects/craftables/sentry.col_encrypted" />
+
+    <file src="files/objects/craftables/cama.txd_encrypted" />
+    <file src="files/objects/craftables/cama.dff_encrypted" />
+    <file src="files/objects/craftables/cama.col_encrypted" />
+
+    <file src="files/objects/craftables/fogueira.txd_encrypted" />
+    <file src="files/objects/craftables/fogueira.dff_encrypted" />
+    <file src="files/objects/craftables/fogueira.col_encrypted" />
+
+    <file src="files/objects/craftables/torch.txd_encrypted" />
+    <file src="files/objects/craftables/torch.dff_encrypted" />
+    <file src="files/objects/craftables/torch.col_encrypted" />
+
+    <file src="files/objects/craftables/sandbags.txd_encrypted" />
+    <file src="files/objects/craftables/sandbags.dff_encrypted" />
+    <file src="files/objects/craftables/sandbags.col_encrypted" />
+
+    <file src="files/objects/craftables/oil-barrel.txd_encrypted" />
+    <file src="files/objects/craftables/oil-barrel.dff_encrypted" />
+
+    <file src="files/objects/craftables/barricade.txd_encrypted" />
+    <file src="files/objects/craftables/barricade.dff_encrypted" />
+    <file src="files/objects/craftables/barricade.col_encrypted" />
+
+    <file src="files/objects/craftables/recicladora.txd_encrypted" />
+    <file src="files/objects/craftables/recicladora.dff_encrypted" />
+    <file src="files/objects/craftables/recicladora.col_encrypted" />
+
+    <file src="files/objects/craftables/mesa-pesquisa.txd_encrypted" />
+    <file src="files/objects/craftables/mesa-pesquisa.dff_encrypted" />
+    <file src="files/objects/craftables/mesa-pesquisa.col_encrypted" />
+
+    <file src="files/objects/pickups/tank.txd_encrypted" />
+    <file src="files/objects/pickups/tank.dff_encrypted" />
+    <file src="files/objects/pickups/engine.txd_encrypted" />
+    <file src="files/objects/pickups/engine.dff_encrypted" />
+    <file src="files/objects/pickups/milho.txd_encrypted" />
+    <file src="files/objects/pickups/milho.dff_encrypted" />
+    <file src="files/objects/pickups/assault_ammo.txd_encrypted" />
+    <file src="files/objects/pickups/assault_ammo.dff_encrypted" />
+    <file src="files/objects/pickups/arrow.txd_encrypted" />
+    <file src="files/objects/pickups/arrow.dff_encrypted" />
+    <file src="files/objects/pickups/apple.txd_encrypted" />
+    <file src="files/objects/pickups/apple.dff_encrypted" />
+    <file src="files/objects/pickups/bandage.txd_encrypted" />
+    <file src="files/objects/pickups/bandage.dff_encrypted" />
+    <file src="files/objects/pickups/morphine.txd_encrypted" />
+    <file src="files/objects/pickups/morphine.dff_encrypted" />
+    <file src="files/objects/pickups/blood_kit.txd_encrypted" />
+    <file src="files/objects/pickups/blood_kit.dff_encrypted" />
+    <file src="files/objects/pickups/medic_kit.txd_encrypted" />
+    <file src="files/objects/pickups/medic_kit.dff_encrypted" />
+    <file src="files/objects/pickups/helmet.txd_encrypted" />
+    <file src="files/objects/pickups/helmet.dff_encrypted" />
+    <file src="files/objects/pickups/vest.txd_encrypted" />
+    <file src="files/objects/pickups/vest.dff_encrypted" />
+    <file src="files/objects/pickups/mask.txd_encrypted" />
+    <file src="files/objects/pickups/mask.dff_encrypted" />
+    <file src="files/objects/pickups/abobrinha.txd_encrypted" />
+    <file src="files/objects/pickups/abobrinha.dff_encrypted" />
+
+    <file src="files/objects/pickups/sack.txd_encrypted" />
+    <file src="files/objects/pickups/sack.dff_encrypted" />
+    <file src="files/objects/pickups/sack.col_encrypted" />
+
+
+    <file src="files/objects/weapons/ak.txd_encrypted" />
+    <file src="files/objects/weapons/ak.dff_encrypted" />
+    <file src="files/objects/weapons/bolt.txd_encrypted" />
+    <file src="files/objects/weapons/bolt.dff_encrypted" />
+    <file src="files/objects/weapons/chainsaw.txd_encrypted" />
+    <file src="files/objects/weapons/chainsaw.dff_encrypted" />
+    <file src="files/objects/weapons/crossbow.txd_encrypted" />
+    <file src="files/objects/weapons/crossbow.dff_encrypted" />
+    <file src="files/objects/weapons/custom.txd_encrypted" />
+    <file src="files/objects/weapons/custom.dff_encrypted" />
+    <file src="files/objects/weapons/double_barreled.txd_encrypted" />
+    <file src="files/objects/weapons/double_barreled.dff_encrypted" />
+    <file src="files/objects/weapons/flame.txd_encrypted" />
+    <file src="files/objects/weapons/flame.dff_encrypted" />
+    <file src="files/objects/weapons/grenade_launcher.txd_encrypted" />
+    <file src="files/objects/weapons/grenade_launcher.dff_encrypted" />
+    <file src="files/objects/weapons/hammer.txd_encrypted" />
+    <file src="files/objects/weapons/hammer.dff_encrypted" />
+    <file src="files/objects/weapons/hatchet.txd_encrypted" />
+    <file src="files/objects/weapons/hatchet.dff_encrypted" />
+    <file src="files/objects/weapons/jackhammer.txd_encrypted" />
+    <file src="files/objects/weapons/jackhammer.dff_encrypted" />
+    <file src="files/objects/weapons/l96.txd_encrypted" />
+    <file src="files/objects/weapons/l96.dff_encrypted" />
+    <file src="files/objects/weapons/lr-300.txd_encrypted" />
+    <file src="files/objects/weapons/lr-300.dff_encrypted" />
+    <file src="files/objects/weapons/m39.txd_encrypted" />
+    <file src="files/objects/weapons/m39.dff_encrypted" />
+    <file src="files/objects/weapons/m92.txd_encrypted" />
+    <file src="files/objects/weapons/m92.dff_encrypted" />
+    <file src="files/objects/weapons/m249.txd_encrypted" />
+    <file src="files/objects/weapons/m249.dff_encrypted" />
+    <file src="files/objects/weapons/mp5.txd_encrypted" />
+    <file src="files/objects/weapons/mp5.dff_encrypted" />
+    <file src="files/objects/weapons/pickaxe.txd_encrypted" />
+    <file src="files/objects/weapons/pickaxe.dff_encrypted" />
+    <file src="files/objects/weapons/pump.txd_encrypted" />
+    <file src="files/objects/weapons/pump.dff_encrypted" />
+    <file src="files/objects/weapons/python.txd_encrypted" />
+    <file src="files/objects/weapons/python.dff_encrypted" />
+    <file src="files/objects/weapons/revolver.txd_encrypted" />
+    <file src="files/objects/weapons/revolver.dff_encrypted" />
+    <file src="files/objects/weapons/rocket_launcher.txd_encrypted" />
+    <file src="files/objects/weapons/rocket_launcher.dff_encrypted" />
+    <file src="files/objects/weapons/spas-12.txd_encrypted" />
+    <file src="files/objects/weapons/spas-12.dff_encrypted" />
+    <file src="files/objects/weapons/thompson.txd_encrypted" />
+    <file src="files/objects/weapons/thompson.dff_encrypted" />
+    <file src="files/objects/weapons/torch.txd_encrypted" />
+    <file src="files/objects/weapons/torch.dff_encrypted" />
+
+    <file src="files/objects/drop.col_encrypted" />
+    <file src="files/objects/drop.dff_encrypted" />
+    <file src="files/objects/parachute.dff_encrypted" />
+    <file src="files/objects/parachute.txd_encrypted" />
+    <file src="files/objects/ship.txd_encrypted" />
+    <file src="files/objects/ship.dff_encrypted" />
+    <file src="files/objects/ship.col_encrypted" />
+    
+    <file src="files/objects/a51_build1.dff_encrypted" />
+    <file src="files/objects/a51_build1.col_encrypted" />
+    <file src="files/objects/a51_build2.dff_encrypted" />
+    <file src="files/objects/a51_build2.col_encrypted" />
+    <file src="files/objects/a51_ext.col_encrypted" />
+    <file src="files/objects/a51_ext.txd_encrypted" />
+    <file src="files/objects/a51_hangar.dff_encrypted" />
+    <file src="files/objects/a51_hangar.col_encrypted" />
+    <file src="files/objects/a51_txd.txd_encrypted" />
+
+    <file src="files/skins/30244.txd_encrypted" />
+    <file src="files/skins/30245.txd_encrypted" />
+    <file src="files/skins/30262.txd_encrypted" />
+    <file src="files/skins/30360.txd_encrypted" />
+    <file src="files/skins/30361.txd_encrypted" />
+    <file src="files/skins/30362.txd_encrypted" />
+    <file src="files/skins/30364.txd_encrypted" />
+    <file src="files/skins/30388.txd_encrypted" />
+    <file src="files/skins/30418.txd_encrypted" />
+    <file src="files/skins/30420.txd_encrypted" />
+    <file src="files/skins/30421.txd_encrypted" />
+    <file src="files/skins/30419.txd_encrypted" />
+    <file src="files/skins/30441.txd_encrypted" />
+    <file src="files/skins/30504.txd_encrypted" />
+    <file src="files/skins/30309.txd_encrypted" />
+    <file src="files/skins/30381.txd_encrypted" />
+    <file src="files/skins/30382.txd_encrypted" />
+    <file src="files/skins/30475.txd_encrypted" />
+
+    <file src="files/skins/radial.txd_encrypted" />
+    <file src="files/skins/radial.dff_encrypted" />
+    <file src="files/skins/staff.txd_encrypted" />
+    <file src="files/skins/staff.dff_encrypted" />
+</meta>

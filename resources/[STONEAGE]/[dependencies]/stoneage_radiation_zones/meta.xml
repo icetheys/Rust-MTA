@@ -1,0 +1,4 @@
+<meta>
+    <script src='zones.lua' type='client' cache='false'/>
+    <script src='c.main.lua' type='client' cache='false'/>
+</meta>

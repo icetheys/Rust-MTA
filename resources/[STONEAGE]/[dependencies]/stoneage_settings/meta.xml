@@ -1,0 +1,40 @@
+<meta>
+    <script src='c.utils.lua' type='client' cache='false'/>
+    <script src='c.mySettings.lua' type='client' cache='false'/>
+    <script src='c.main.lua' type='client' cache='false'/>
+
+    <script src='s.main.lua' type='server'/>
+
+    <export function='setConfig' type='shared'/>
+    <export function='getConfig' type='shared'/>
+    <export function='toggleConfigs' type='client'/>
+
+    <file src="icons/1.png"/>
+    <file src="icons/2.png"/>
+    <file src="icons/3.png"/>
+    <file src="icons/4.png"/>
+    <file src="icons/5.png"/>
+    <file src="icons/6.png"/>
+    <file src="icons/7.png"/>
+    <file src="icons/8.png"/>
+    <file src="icons/9.png"/>
+    <file src="icons/10.png"/>
+    <file src="icons/11.png"/>
+    <file src="icons/12.png"/>
+    <file src="icons/13.png"/>
+    <file src="icons/14.png"/>
+    <file src="icons/15.png"/>
+    <file src="icons/16.png"/>
+    <file src="icons/17.png"/>
+    <file src="icons/18.png"/>
+    <file src="icons/19.png"/>
+    <file src="icons/20.png"/>
+    <file src="icons/21.png"/>
+    <file src="icons/22.png"/>
+    <file src="icons/23.png"/>
+    <file src="icons/24.png"/>
+    <file src="icons/25.png"/>
+    <file src="icons/sniper.png"/>
+
+    <download_priority_group>-1</download_priority_group>
+</meta>

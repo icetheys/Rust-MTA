@@ -1,0 +1,7 @@
+<meta>
+    <script src='client/c.utils.lua' type='client' cache='false'/>
+    <script src='client/c.main.lua' type='client' cache='false'/>
+    <script src='server/s.main.lua' type='server'/>
+    <file src='assets/futura.ttf'/>
+    <file src='assets/breath.ogg'/>
+</meta>

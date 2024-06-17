@@ -1,0 +1,4 @@
+<meta>
+    <script src='script.lua' type='shared' cache='false' />
+    <export function='play3DSound' type='shared' />
+</meta>

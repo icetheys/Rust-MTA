@@ -1,0 +1,50 @@
+<meta>
+    <info author="iDannz" version="1.0" name="Biblioteca GUI feita para o StoneAge" description="desc." type="script" />
+
+    <file src= 'files/pixel.png'/>
+
+    <script src="scripts/utils.lua" type="client" cache="false" />
+    <script src="scripts/defaultStyle.lua" type="client" cache="false" />
+    <script src="scripts/main.lua" type="client" cache="false" />
+
+    <script src="scripts/widgets/rectangle.lua" type="client" cache="false" />
+    <script src="scripts/widgets/button.lua" type="client" cache="false" />
+    <script src="scripts/widgets/editbox.lua" type="client" cache="false" />
+    <script src="scripts/widgets/window.lua" type="client" cache="false" />
+    <script src="scripts/widgets/combobox.lua" type="client" cache="false" />
+    <script src="scripts/widgets/checkbox.lua" type="client" cache="false" />
+    <script src="scripts/widgets/scrollpane.lua" type="client" cache="false" />
+    <script src="scripts/widgets/list.lua" type="client" cache="false" />
+    <script src="scripts/widgets/label.lua" type="client" cache="false" />
+    <script src="scripts/widgets/progressbar.lua" type="client" cache="false" />
+    <script src="scripts/widgets/tab.lua" type="client" cache="false" />
+    <script src="scripts/widgets/others.lua" type="client" cache="false" />
+
+    <script src="scripts/test.lua" type="client" cache="false" />
+
+    <export function="createImage" type="client"/>
+    <export function="setImageColor" type="client"/>
+    <export function="CreateRectangle" type="client"/>
+    <export function="SetRectangleColor" type="client"/>
+    <export function="CreateButton" type="client"/>
+    <export function="setProgress" type="client"/>
+    <export function="CreateProgressBar" type="client"/>
+    <export function="getSelectedListItem" type="client"/>
+    <export function="createText" type="client"/>
+    <export function="addListItem" type="client"/>
+    <export function="addComboBoxItem" type="client"/>
+    <export function="CreateLabel" type="client"/>
+    <export function="CreateList" type="client"/>
+    <export function="createEdit" type="client"/>
+    <export function="CreateEditBox" type="client"/>
+    <export function="CreateWindow" type="client"/>
+    <export function="CreateTextWithBG" type="client"/>
+    <export function="CreateImageWithBG" type="client"/>
+    <export function="CreateScrollPane" type="client"/>
+    <export function="CreateComboBox" type="client"/>
+    <export function="CreateCheckbox" type="client"/>
+    <export function="createTab" type="client"/>
+    <export function="setSelectedListItem" type="client"/>
+    <export function="getComboBoxSelectedItem" type="client"/>
+    <export function="ResetListItems" type="client"/>
+</meta>

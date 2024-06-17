@@ -1,0 +1,483 @@
+<meta>
+    <info author="iDannz" version="1.0" name="Rust GameMode" description="desc." type="gamemode" />
+    <min_mta_version client="1.5.7-9.20447"></min_mta_version>
+    
+    <!-- SCRIPTS -->
+    <!-- SHARED -->
+    <script src="scripts/global/g.utils.lua" type="shared" cache="false" />
+    <script src="scripts/global/g.dataConfig.lua" type="shared" cache="false" />
+    <script src="scripts/global/g.gameplayConfig.lua" type="shared" cache="false" />
+    <script src="scripts/global/g.blueprints.lua" type="shared" cache="false" />
+    <script src="scripts/global/g.objects.lua" type="shared" cache="false" />
+    <script src="scripts/global/g.inventory-functions.luac" type="shared" cache="false" />
+    <script src="scripts/global/g.worldConfig.lua" type="shared" cache="false" />
+    <script src="scripts/global/async.lua" type="shared" cache="false" />
+    <script src="scripts/global/positions/spawns.player.lua" type="shared" cache="false" />
+    
+    <!-- SERVER -->
+    <script src="scripts/server/s.main.lua" type="server" />
+    <script src="scripts/server/database/s.database.lua" type="server" />
+    <script src="scripts/server/database/s.accounts.lua" type="server" />
+    <script src="scripts/server/database/s.objects.luac" type="server" />
+    <script src="scripts/server/s.utils.lua" type="server" />
+    <script src="scripts/server/s.player.luac" type="server" />
+    <script src="scripts/server/s.inventory.luac" type="server" />
+    <script src="scripts/server/s.chat.lua" type="server" />
+    <script src="scripts/server/s.damage.lua" type="server" />
+    <script src="scripts/server/s.researchTable.lua" type="server" />
+    <script src="scripts/server/s.espetos.lua" type="server" />
+    <script src="scripts/server/s.attachments.lua" type="server" />
+    <script src="scripts/server/s.craft.lua" type="server" />
+    <script src="scripts/server/s.system.lua" type="server" />
+    <script src="scripts/server/s.planter.lua" type="server" />
+    <script src="scripts/server/s.furnance.lua" type="server" />
+    <script src="scripts/server/s.temp.lua" type="server" />
+    
+    <!-- CLIENT -->
+    <script src="scripts/client/c.utils.lua" type="client" cache="false" />
+    <script src="scripts/client/c.main.lua" type="client" cache="false" />
+    <script src="scripts/client/c.lods.lua" type="client" cache="false" />
+    <script src="scripts/client/c.weapons.lua" type="client" cache="false" />
+    <script src="scripts/client/inventory/c.inventory.lua" type="client" cache="false" />
+    <script src="scripts/client/inventory/c.inv-utils.lua" type="client" cache="false" />
+    <script src="scripts/client/inventory/c.inv-infoBox.lua" type="client" cache="false" />
+    <script src="scripts/client/inventory/c.inv-pedSide.lua" type="client" cache="false" />
+    <script src="scripts/client/inventory/c.inv-keybar.lua" type="client" cache="false" />
+    <script src="scripts/client/inventory/c.inv-blueprints.lua" type="client" cache="false" />
+    <script src="scripts/client/inventory/c.inv-gear.lua" type="client" cache="false" />
+    
+    <script src="scripts/client/c.craft.lua" type="client" cache="false" />
+    <script src="scripts/client/c.temp.lua" type="client" cache="false" />
+    <script src="scripts/client/c.tutorials.lua" type="client" cache="false" />
+    <!-- <script src="scripts/client/c.menu.lua" type="client" cache="false" /> -->
+    <!-- <script src="scripts/client/c.menuOptions.lua" type="client" cache="false" /> -->
+    <script src="scripts/client/c.damage.lua" type="client" cache="false" />
+    <script src="scripts/client/c.hud.lua" type="client" cache="false" />
+    <script src="scripts/client/c.mainMenu.lua" type="client" cache="false" />
+    <script src="scripts/client/c.death.lua" type="client" cache="false" />
+    <script src="scripts/client/windows/c.confirmWindow.lua" type="client" cache="false" />
+    <script src="scripts/client/windows/c.wardrobe-permissions.lua" type="client" cache="false" />
+    <script src="scripts/client/windows/c.wardrobe-password.lua" type="client" cache="false" />
+    <script src="scripts/client/windows/c.changePlateText.lua" type="client" cache="false" />
+    <script src="scripts/client/windows/c.reset.lua" type="client" cache="false" />
+    
+    <file src="files/fonts/futura.ttf" />
+    <file src="files/fonts/rust.ttf" />
+    <file src="files/fonts/franklin.ttf" />
+    <file src="files/images/logo.png" />
+    <file src="files/images/pixel.png" />
+    <file src="files/others/mng" />
+
+    <!-- <file src="files/sounds/axe hit.mp3" /> -->
+    <!-- <file src="files/sounds/pickaxe hit.mp3" /> -->
+    <file src="files/sounds/wooden1.mp3" />
+    <file src="files/sounds/wooden2.mp3" />
+    <file src="files/sounds/wooden3.mp3" />
+    <file src="files/sounds/hover.mp3" />
+    <file src="files/sounds/hover.ogg" />
+    <file src="files/sounds/door.mp3" />
+    <file src="files/sounds/c4.mp3" />
+    <file src="files/sounds/bandage.mp3" />
+    <file src="files/sounds/food.mp3" />
+    <file src="files/sounds/iron.mp3" />
+    <file src="files/sounds/pano.mp3" />
+    <file src="files/sounds/rochas.mp3" />
+    <file src="files/sounds/sementes.mp3" />
+    <file src="files/sounds/fornalha_desligar.mp3" />
+    <file src="files/sounds/fornalha_ligar.mp3" />
+    <file src="files/sounds/explosions/c4_1.mp3" />
+    <file src="files/sounds/explosions/c4_2.mp3" />
+    <file src="files/sounds/explosions/c4_3.mp3" />
+    <file src="files/sounds/explosions/c4_longe.mp3" />
+    <file src="files/sounds/explosions/rocket_1.mp3" />
+    <file src="files/sounds/explosions/rocket_2.mp3" />
+    <file src="files/sounds/explosions/rocket_3.mp3" />
+    <file src="files/sounds/explosions/rocket_4.mp3" />
+    <file src="files/sounds/explosions/rocket_longe.mp3" />
+    <file src="files/sounds/explosions/satchel_1.mp3" />
+    <file src="files/sounds/explosions/satchel_2.mp3" />
+    <file src="files/sounds/explosions/satchel_longe.mp3" />
+    <file src="files/sounds/explosions/lancagranada_1.wav" />
+    <file src="files/sounds/explosions/lancagranada_longe.wav" />
+    
+    <file src="files/sounds/weapons/lr-300.wav" />
+    <file src="files/sounds/weapons/lr-300_far.wav" />
+    <file src="files/sounds/weapons/ak.wav" />
+    <file src="files/sounds/weapons/ak_far.wav" />
+    <file src="files/sounds/weapons/grenade_launcher.wav" />
+    <file src="files/sounds/weapons/grenade_launcher_far.wav" />
+    <file src="files/sounds/weapons/m39.wav" />
+    <file src="files/sounds/weapons/m39_far.wav" />
+    <file src="files/sounds/weapons/m249.wav" />
+    <file src="files/sounds/weapons/m249_far.wav" />
+    <file src="files/sounds/weapons/bolt.wav" />
+    <file src="files/sounds/weapons/bolt_far.wav" />
+    <file src="files/sounds/weapons/l96.wav" />
+    <file src="files/sounds/weapons/l96_far.wav" />
+    <file src="files/sounds/weapons/crossbow.wav" />
+    <file src="files/sounds/weapons/spas.wav" />
+    <file src="files/sounds/weapons/spas_far.wav" />
+    <file src="files/sounds/weapons/pump.wav" />
+    <file src="files/sounds/weapons/pump_far.wav" />
+    <file src="files/sounds/weapons/double_barreled.wav" />
+    <file src="files/sounds/weapons/double_barreled_far.wav" />
+    <file src="files/sounds/weapons/mp5.wav" />
+    <file src="files/sounds/weapons/thompson.wav" />
+    <file src="files/sounds/weapons/thompson_far.wav" />
+    <file src="files/sounds/weapons/m92.wav" />
+    <file src="files/sounds/weapons/m92_far.wav" />
+    <file src="files/sounds/weapons/sentry.wav" />
+    <file src="files/sounds/weapons/revolver.wav" />
+    <file src="files/sounds/weapons/revolver_far.wav" />
+    <file src="files/sounds/weapons/python.wav" />
+    <file src="files/sounds/weapons/python_far.wav" />
+    <file src="files/sounds/weapons/custom_smg.wav" />
+    <file src="files/sounds/weapons/custom_smg_far.wav" />
+    <file src="files/sounds/weapons/sentry-no-ammo.wav" />
+    
+    <script src="files/shaders/highlight.lua" type="client" cache="false" />
+    
+    <file src="files/images/items/weapon/ak.png" />
+    <file src="files/images/items/weapon/lr_300.png" />
+    <file src="files/images/items/weapon/m39.png" />
+    <file src="files/images/items/weapon/rocket_launcher.png" />
+    <file src="files/images/items/weapon/grenade_launcher.png" />
+    <file src="files/images/items/weapon/m249.png" />
+    <file src="files/images/items/weapon/bolt.png" />
+    <file src="files/images/items/weapon/l96.png" />
+    <file src="files/images/items/weapon/spas.png" />
+    <file src="files/images/items/weapon/pump.png" />
+    <file src="files/images/items/weapon/double-barreled.png" />
+    <file src="files/images/items/weapon/mp5.png" />
+    <file src="files/images/items/weapon/thompson.png" />
+    <file src="files/images/items/weapon/m92.png" />
+    <file src="files/images/items/weapon/python.png" />
+    <file src="files/images/items/weapon/revolver.png" />
+    <file src="files/images/items/weapon/custom.png" />
+    <file src="files/images/items/weapon/crossbow.png" />
+    <file src="files/images/items/weapon/flamethrower.png" />
+    <file src="files/images/items/weapon/beans_can_grenade.png" />
+    <file src="files/images/items/weapon/grenade.png" />
+    <file src="files/images/items/weapon/tear_gas.png" />
+    <file src="files/images/items/weapon/hammer.png" />
+    <file src="files/images/items/weapon/torch.png" />
+    <file src="files/images/items/weapon/chainsaw.png" />
+    <file src="files/images/items/weapon/jackhammer.png" />
+    <file src="files/images/items/weapon/hatchet.png" />
+    <file src="files/images/items/weapon/pickaxe.png" />
+    <file src="files/images/items/weapon/detonator.png" />
+    <file src="files/images/items/weapon/shovel.png" />
+    
+    <file src="files/images/items/ammo/ak.png" />
+    <file src="files/images/items/ammo/lr-300.png" />
+    <file src="files/images/items/ammo/m39.png" />
+    <file src="files/images/items/ammo/rocket_launcher.png" />
+    <file src="files/images/items/ammo/grenade_launcher.png" />
+    <file src="files/images/items/ammo/m249.png" />
+    <file src="files/images/items/ammo/sniper.png" />
+    <file src="files/images/items/ammo/sub.png" />
+    <file src="files/images/items/ammo/pistol.png" />
+    <file src="files/images/items/ammo/crossbow.png" />
+    <file src="files/images/items/ammo/shotgun.png" />
+    <file src="files/images/items/ammo/flame.png" />
+    <file src="files/images/items/ammo/sentry.png" />
+    
+    <file src="files/images/items/battery.png" />
+    <file src="files/images/items/vehicle_battery.png" />
+    <file src="files/images/items/scrap_metal.png" />
+    <file src="files/images/items/duct_tape.png" />
+    <file src="files/images/items/rope.png" />
+    <file src="files/images/items/camera.png" />
+    <file src="files/images/items/gunpowder.png" />
+    <file src="files/images/items/sewing_kit.png" />
+    <file src="files/images/items/road_signs.png" />
+    <file src="files/images/items/satchel.png" />
+    <file src="files/images/items/keycard.png" />
+    <file src="files/images/items/coal.png" />
+    <file src="files/images/items/clock.png" />
+    <file src="files/images/items/toolbox.png" />
+    <file src="files/images/items/empty_gallon.png" />
+    <file src="files/images/items/gallon.png" />
+    <file src="files/images/items/metal_pipe.png" />
+    <file src="files/images/items/tech_parts.png" />
+    <file src="files/images/items/frist_aid.png" />
+    <file src="files/images/items/metal_spring.png" />
+    <file src="files/images/items/gears.png" />
+    <file src="files/images/items/cloth.png" />
+    <file src="files/images/items/map.png" />
+    <file src="files/images/items/radial.png" />
+    <file src="files/images/items/animal_fat.png" />
+    <file src="files/images/items/empty_beans_can.png" />
+    <file src="files/images/items/c4.png" />
+    <file src="files/images/items/beans_can.png" />
+    <file src="files/images/items/tire.png" />
+    <file src="files/images/items/engine.png" />
+    <file src="files/images/items/paper.png" />
+    <file src="files/images/items/parts.png" />
+    <file src="files/images/items/apple.png" />
+    <file src="files/images/items/water.png" />
+    <file src="files/images/items/seed_corn.png" />
+    <file src="files/images/items/empty_bottle.png" />
+    <file src="files/images/items/corn.png" />
+    <file src="files/images/items/meat_cooked.png" />
+    <file src="files/images/items/raw_meat.png" />
+    <file src="files/images/items/planner.png" />
+    <file src="files/images/items/fosforo.png" />
+    <file src="files/images/items/sticks.png" />
+    <file src="files/images/items/sheet_metal.png" />
+    <file src="files/images/items/locker.png" />
+    <file src="files/images/items/wood.png" />
+    <file src="files/images/items/sulphur.png" />
+    <file src="files/images/items/sand.png" />
+    <file src="files/images/items/stone.png" />
+    <file src="files/images/items/fiber.png" />
+    <file src="files/images/items/pure_iron.png" />
+    <file src="files/images/items/iron.png" />
+    <file src="files/images/items/minerio_metal_alta.png" />
+    <file src="files/images/items/metal_alta.png" />
+    <file src="files/images/items/minerio_enxofre.png" />
+    <file src="files/images/items/bandage.png" />
+    <file src="files/images/items/morphine.png" />
+    <file src="files/images/items/blood_kit.png" />
+    <file src="files/images/items/potato.png" />
+    <file src="files/images/items/seed_potato.png" />
+    <file src="files/images/items/pumpkin.png" />
+    <file src="files/images/items/seed_pumpkin.png" />
+    <file src="files/images/items/vest.png" />
+    <file src="files/images/items/helmet.png" />
+    <file src="files/images/items/mask.png" />
+    
+    <file src="files/images/blueprints/weapon/ak.png" />
+    <file src="files/images/blueprints/weapon/lr_300.png" />
+    <file src="files/images/blueprints/weapon/m39.png" />
+    <file src="files/images/blueprints/weapon/rocket_launcher.png" />
+    <file src="files/images/blueprints/weapon/grenade_launcher.png" />
+    <file src="files/images/blueprints/weapon/m249.png" />
+    <file src="files/images/blueprints/weapon/bolt.png" />
+    <file src="files/images/blueprints/weapon/l96.png" />
+    <file src="files/images/blueprints/weapon/spas.png" />
+    <file src="files/images/blueprints/weapon/pump.png" />
+    <file src="files/images/blueprints/weapon/double-barreled.png" />
+    <file src="files/images/blueprints/weapon/mp5.png" />
+    <file src="files/images/blueprints/weapon/thompson.png" />
+    <file src="files/images/blueprints/weapon/m92.png" />
+    <file src="files/images/blueprints/weapon/python.png" />
+    <file src="files/images/blueprints/weapon/revolver.png" />
+    <file src="files/images/blueprints/weapon/custom.png" />
+    <file src="files/images/blueprints/weapon/crossbow.png" />
+    <file src="files/images/blueprints/weapon/flamethrower.png" />
+    <file src="files/images/blueprints/weapon/beans_can_grenade.png" />
+    <file src="files/images/blueprints/weapon/grenade.png" />
+    <file src="files/images/blueprints/weapon/tear_gas.png" />
+    <file src="files/images/blueprints/weapon/hammer.png" />
+    <file src="files/images/blueprints/weapon/torch.png" />
+    <file src="files/images/blueprints/weapon/chainsaw.png" />
+    <file src="files/images/blueprints/weapon/jackhammer.png" />
+    <file src="files/images/blueprints/weapon/hatchet.png" />
+    <file src="files/images/blueprints/weapon/pickaxe.png" />
+    <file src="files/images/blueprints/weapon/detonator.png" />
+    <file src="files/images/blueprints/weapon/shovel.png" />
+    
+    <file src="files/images/blueprints/ammo/ak.png" />
+    <file src="files/images/blueprints/ammo/lr-300.png" />
+    <file src="files/images/blueprints/ammo/m39.png" />
+    <file src="files/images/blueprints/ammo/rocket_launcher.png" />
+    <file src="files/images/blueprints/ammo/grenade_launcher.png" />
+    <file src="files/images/blueprints/ammo/m249.png" />
+    <file src="files/images/blueprints/ammo/sniper.png" />
+    <file src="files/images/blueprints/ammo/sub.png" />
+    <file src="files/images/blueprints/ammo/pistol.png" />
+    <file src="files/images/blueprints/ammo/crossbow.png" />
+    <file src="files/images/blueprints/ammo/shotgun.png" />
+    <file src="files/images/blueprints/ammo/flame.png" />
+    <file src="files/images/blueprints/ammo/sentry.png" />
+    <file src="files/images/blueprints/satchel.png" />
+    <file src="files/images/blueprints/c4.png" />
+    <file src="files/images/blueprints/helmet.png" />
+    <file src="files/images/blueprints/vest.png" />
+    
+    <file src="files/images/ui/map-low-res.png" />
+    <file src="files/images/ui/reload.png" />
+    <file src="files/images/ui/brokenbone.png" />
+    <file src="files/images/ui/loading.png" />
+    <file src="files/images/ui/loading-1.png" />
+    <file src="files/images/ui/loading-2.png" />
+    <file src="files/images/ui/loading-3.png" />
+    <file src="files/images/ui/loading-4.png" />
+    <file src="files/images/ui/loading-5.png" />
+    <file src="files/images/ui/loading-6.png" />
+    <file src="files/images/ui/loading-7.png" />
+    <file src="files/images/ui/loading-8.png" />
+    <file src="files/images/ui/loading-9.png" />
+    <file src="files/images/ui/explosives.png" />
+    <file src="files/images/ui/tools.png" />
+    <file src="files/images/ui/medicaments.png" />
+    <file src="files/images/ui/bases.png" />
+    <file src="files/images/ui/misc.png" />
+    <file src="files/images/ui/misc2.png" />
+    <file src="files/images/ui/objects.png" />
+    <file src="files/images/ui/weapons.png" />
+    <file src="files/images/ui/quit.png" />
+    <file src="files/images/ui/info.png" />
+    <file src="files/images/ui/play.png" />
+    <file src="files/images/ui/settings.png" />
+    <file src="files/images/ui/ranking.png" />
+    <file src="files/images/ui/discord.png" />
+    <file src="files/images/ui/arma.png" />
+    <file src="files/images/ui/ammunition.png" />
+    <file src="files/images/ui/blockedsquare.png" />
+    <file src="files/images/ui/blood.png" />
+    <file src="files/images/ui/sede.png" />
+    <file src="files/images/ui/fome.png" />
+    <file src="files/images/ui/vip.png" />
+    <file src="files/images/ui/fire.png" />
+    <file src="files/images/ui/health.png" />
+    <file src="files/images/ui/raid.png" />
+    <file src="files/images/ui/die.png" />
+    <file src="files/images/ui/headshot.png" />
+    <file src="files/images/ui/hitmarker.png" />
+    
+    <file src="files/images/ui/keys/cursor_left.png" />
+    <file src="files/images/ui/keys/cursor_right.png" />
+    <file src="files/images/ui/keys/spacebar.png" />
+    <file src="files/images/ui/keys/cursor_middle.png" />
+    <file src="files/images/ui/keys/cursor_middle_r.png" />
+    <file src="files/images/ui/keys/ctrl.png" />
+    <file src="files/images/ui/keys/shift.png" />
+    <file src="files/images/ui/keys/arrow_l.png" />
+    <file src="files/images/ui/keys/arrow_r.png" />
+    <file src="files/images/ui/keys/arrow_u.png" />
+    <file src="files/images/ui/keys/arrow_d.png" />
+    <file src="files/images/ui/keys/4.png" />
+    <file src="files/images/ui/keys/8.png" />
+    <file src="files/images/ui/keys/2.png" />
+    <file src="files/images/ui/keys/6.png" />
+    
+    <file src="files/images/objects/wardrobe.png" />
+    <file src="files/images/objects/bau_pequeno.png" />
+    <file src="files/images/objects/bau_grande.png" />
+    <file src="files/images/objects/barril.png" />
+    <file src="files/images/objects/fornalha.png" />
+    <file src="files/images/objects/fogueira.png" />
+    <file src="files/images/objects/poco.png" />
+    <file src="files/images/objects/sandbags.png" />
+    <file src="files/images/objects/oil_barrel.png" />
+    <file src="files/images/objects/barricade.png" />
+    <file src="files/images/objects/placa.png" />
+    <file src="files/images/objects/planter.png" />
+    <file src="files/images/objects/cama.png" />
+    <file src="files/images/objects/espetos.png" />
+    <file src="files/images/objects/workbench.png" />
+    <file src="files/images/objects/torch.png" />
+    <file src="files/images/objects/sentry.png" />
+    <file src="files/images/objects/mesa_pesquisa.png" />
+    
+    <file src="files/images/roupas/0_2.png" />
+    <file src="files/images/roupas/0_4.png" />
+    <file src="files/images/roupas/0_5.png" />
+    <file src="files/images/roupas/0_10.png" />
+    <file src="files/images/roupas/0_11.png" />
+    <file src="files/images/roupas/0_17.png" />
+    <file src="files/images/roupas/0_19.png" />
+    <file src="files/images/roupas/0_20.png" />
+    <file src="files/images/roupas/0_26.png" />
+    <file src="files/images/roupas/0_28.png" />
+    <file src="files/images/roupas/0_35.png" />
+    <file src="files/images/roupas/0_37.png" />
+    <file src="files/images/roupas/0_39.png" />
+    <file src="files/images/roupas/0_42.png" />
+    <file src="files/images/roupas/0_44.png" />
+    <file src="files/images/roupas/0_45.png" />
+    <file src="files/images/roupas/2_3.png" />
+    <file src="files/images/roupas/2_5.png" />
+    <file src="files/images/roupas/2_6.png" />
+    <file src="files/images/roupas/2_7.png" />
+    <file src="files/images/roupas/2_13.png" />
+    <file src="files/images/roupas/2_15.png" />
+    <file src="files/images/roupas/2_17.png" />
+    <file src="files/images/roupas/2_29.png" />
+    <file src="files/images/roupas/2_16.png" />
+    <file src="files/images/roupas/2_34.png" />
+    <file src="files/images/roupas/2_36.png" />
+    <file src="files/images/roupas/3_4.png" />
+    <file src="files/images/roupas/3_6.png" />
+    <file src="files/images/roupas/3_11.png" />
+    <file src="files/images/roupas/3_13.png" />
+    <file src="files/images/roupas/3_20.png" />
+    <file src="files/images/roupas/3_29.png" />
+    <file src="files/images/roupas/3_31.png" />
+    <file src="files/images/roupas/16_10.png" />
+    <file src="files/images/roupas/16_11.png" />
+    <file src="files/images/roupas/16_22.png" />
+    <file src="files/images/roupas/16_27.png" />
+    <file src="files/images/roupas/16_32.png" />
+    <file src="files/images/roupas/16_33.png" />
+    <file src="files/images/roupas/16_36.png" />
+    
+    <aclrequest>
+        <right name="function.kickPlayer" access="true" />
+        <right name="function.startResource" access="true" />
+    </aclrequest>
+    
+    <export function="setPedClothes" type="shared" />
+    <export function="applyClothes" type="shared" />
+    <export function="getAccountPlayer" type="shared" />
+    
+    <export function="setAccountData" type="server" />
+    <export function="GetAccountData" type="server" />
+    
+    <export function="getTimeString" type="server" />
+    <export function="onPlayerDisequipItem" type="server" />
+    <export function="onPlayerEquipItem" type="server" />
+    <export function="setPreference" type="server" />
+    
+    <export function="RunDecay" type="server" />
+    <export function="RepairAllObjects" type="server" />
+    
+    <export function="getItemType" type="shared" />
+    <export function="isWeapon" type="shared" />
+    <export function="getItemMaxStack" type="shared" />
+    <export function="getItemMaxSpawnQuantity" type="shared" />
+    <export function="getPlayerDataSetting" type="shared" />
+    <export function="getObjectDataSetting" type="shared" />
+    
+    <export function="getPlayerDataTable" type="shared" />
+    
+    <export function="getObModel" type="shared" />
+    <export function="getObjectLimit" type="shared" />
+    <export function="getObjectCustoString" type="shared" />
+    
+    <export function="getTexture" type="client" />
+    <export function="disequipCurrentKeybarItem" type="client" />
+    <export function="canPutHere" type="client" />
+    <export function="toggleLogin" type="client" />
+    <export function="toggleHUD" type="client" />
+    <export function="toggleKeyBar" type="client" />
+    <export function="addHitMarker" type="client" />
+    <export function="getGamePlayConfig" type="client" />
+    <export function="isFriendly" type="client" />
+    <export function="setLootSource" type="client" />
+    <export function="toggleInventory" type="client" />
+    <export function="showConfirmWindow" type="client" />
+    <export function="showWardrobePassword" type="client" />
+    <export function="isCreator" type="client" />
+    <export function="isAdmin" type="shared" />
+    <export function="showWardrobePermissions" type="client" />
+    <export function="showPlateTextEdit" type="client" />
+    <export function="isBaseItem" type="client" />
+    <export function="directionOpenDoor" type="client" />
+    <export function="isPlayerCrafting" type="client" />
+    <export function="isShowingInventory" type="client" />
+    <export function="getItemCustoString" type="server" />
+    <export function="getReceiveOnCraftQuant" type="server" />
+    <export function="addWaterToPocos" type="server" />
+    <export function="isItemOfInventory" type="shared" />
+    <export function="destroyObject" type="server" />
+    <export function="ClearAccountDataCache" type="server" />
+    <export function="CheckForLODS" type="client" />
+    <export function="returnPrincTable" type="shared" />
+    
+    <oop>true</oop>
+    
+    <min_mta_version server="1.5.5-9.13846" client="1.5.6-9.16404"></min_mta_version>
+</meta>

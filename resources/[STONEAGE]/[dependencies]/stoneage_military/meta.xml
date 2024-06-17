@@ -1,0 +1,13 @@
+<meta>
+  <!-- <info type="map" version="1.0.0"></info> -->
+
+  <info type="script" name="Área militar" author="iDannz" version="1.0" description="Area militar mais top do server rsrsrs"></info>
+  <map src="addon_areaMilitar.map" dimension="0"></map>
+
+  <script src="mapEditorScriptingExtension_s.lua" type="server"></script>
+  <script src="mapEditorScriptingExtension_c.lua" type="client" validate="false" cache="false"></script>
+  <script src="s_radial.lua" type="server"/>
+  <script src="s_portoes.lua" type="server"/>
+  <file src='files/open.mp3'/>
+  <file src='files/close.mp3'/>
+</meta>

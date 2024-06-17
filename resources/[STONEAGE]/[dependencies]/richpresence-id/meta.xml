@@ -1,0 +1,10 @@
+<meta>
+    <info author="Rougue and bgzada" type="script" name="Anti-Evade" />
+    <script src="c_main.lua" type="client" cache="false" />
+    <script src="s_main.lua" type="server" />
+    <aclrequest>
+        <right name="function.getBans" access="true"/>
+        <right name="function.addBan" access="true"/>
+        <right name="function.reloadBans" access="true"/>
+    </aclrequest>
+</meta>

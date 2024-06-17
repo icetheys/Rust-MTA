@@ -1,0 +1,19 @@
+<meta>
+    <script src='client/c.main.lua' type='client' cache='false'/>
+    <script src='client/c.home.lua' type='client' cache='false'/>
+    <script src='client/c.myGroup.lua' type='client' cache='false'/>
+
+    <script src='server/s.main.luac' type='server'/>
+
+    <script src='config.lua'/>
+
+    <export function='HasPermissionToOpenGroupDoor' type='server'/>
+    <export function='RemoveSerialFromGroup' type='server'/>
+    <export function='GetAllGroups' type='server'/>
+    <export function='GetGroup' type='server'/>
+    <export function='DestroyGroup' type='server'/>
+    <export function='InsertMemberInGroup' type='server'/>
+    <export function='SetGroupDescription' type='server'/>
+    <export function='SetGroupLimit' type='server'/>
+    <export function='DestroyGroup' type='server'/>
+</meta>

@@ -1,0 +1,8 @@
+<meta>
+    <script src="c.main.lua" type="client" cache="false" />
+    <script src="s.main.lua" type="server" />
+    <file src="assets/regular.ttf" />
+    
+    <export function="CreateNotification" type="shared" />
+    <min_mta_version client="1.5.7-9.20447"></min_mta_version>
+</meta>

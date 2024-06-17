@@ -1,0 +1,55 @@
+<meta>
+    <script src="c.utils.lua" type="client" cache="false" />
+    <script src="config.lua" type="client" cache="false" />
+    <script src="c.main.lua" type="client" cache="false" />
+    <script src="c.optionList.lua" type="client" cache="false" />
+    <script src="c.render.lua" type="client" cache="false" />
+    
+    <file src="assets/icons/base_upgrade_1.png" />
+    <file src="assets/icons/base_upgrade_2.png" />
+    <file src="assets/icons/base_upgrade_3.png" />
+    <file src="assets/icons/base_upgrade_4.png" />
+    <file src="assets/icons/abrir_porta.png" />
+    <file src="assets/icons/acender_fogo.png" />
+    <file src="assets/icons/apagar_fogo.png" />
+    <file src="assets/icons/mudar_texto_placa.png" />
+    <file src="assets/icons/toc_toc_porta.png" />
+    <file src="assets/icons/beber.png" />
+    <file src="assets/icons/abrir_inventario.png" />
+    <file src="assets/icons/colocar_pneu.png" />
+    <file src="assets/icons/coletar_agua.png" />
+    <file src="assets/icons/destruir.png" />
+    <file src="assets/icons/alterar_senha.png" />
+    <file src="assets/icons/movimentar.png" />
+    <file src="assets/icons/plantar_explosivo.png" />
+    <file src="assets/icons/evoluir.png" />
+    <file src="assets/icons/remover_municao.png" />
+    <file src="assets/icons/inserir_municao.png" />
+    <file src="assets/icons/tirar_engine.png" />
+    <file src="assets/icons/colocar_engine.png" />
+    <file src="assets/icons/tirar_bateria.png" />
+    <file src="assets/icons/colocar_bateria.png" />
+    <file src="assets/icons/tirar_pneu.png" />
+    <file src="assets/icons/encherGalao.png" />
+    <file src="assets/icons/assar_item.png" />
+    <file src="assets/icons/plantar_item.png" />
+    <file src="assets/icons/colher_item.png" />
+    <file src="assets/icons/abrir_fechar_janela.png" />
+    <file src="assets/icons/inserir_keycard.png" />
+    <file src="assets/icons/aprender_blueprint.png" />
+    <file src="assets/icons/comer.png" />
+    <file src="assets/icons/cancelar.png" />
+    <file src="assets/icons/ver_permissoes.png" />
+    <file src="assets/icons/curar.png" />
+    <file src="assets/icons/reparar_objetos.png" />
+    <file src="assets/icons/colocar_galao.png" />
+    <file src="assets/icons/reparar_veiculo.png" />
+    
+    <export function='CheckObjectLevel' type='client'/>
+
+    <file src="assets/icons/info.png" />
+    <file src="assets/fonts/regular.ttf" />
+    <file src="assets/fonts/regular2.ttf" />
+    <file src="assets/click.wav" />
+    <min_mta_version client="1.5.7-9.20447"></min_mta_version>
+</meta>
